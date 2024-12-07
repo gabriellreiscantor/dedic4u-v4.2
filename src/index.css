@@ -1,0 +1,63 @@
+@import '@fontsource/dancing-script';
+@import '@fontsource/poppins';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    @apply bg-black;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#root {
+  @apply min-h-screen;
+  background: linear-gradient(to bottom, #000000, #1a1a1a);
+}
+
+.romantic-title {
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.font-dancing {
+  font-family: 'Dancing Script', cursive;
+}
+
+.text-stroke {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 78, 109, 0.5) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #FF4E6D !important;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 78, 109, 0.5);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 78, 109, 0.7);
+}
