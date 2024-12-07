@@ -31,7 +31,7 @@ export function PaymentPage() {
     savePageData();
   }, [formData, selectedPlan, slug, navigate]);
 
-  const seconds = useCountdown(30, () => {
+  const seconds = useCountdown(45, () => {
     if (slug) {
       navigate(`/${slug}`);
     }
