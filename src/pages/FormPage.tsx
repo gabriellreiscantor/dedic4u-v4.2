@@ -18,8 +18,10 @@ const FormPage = () => {
           border: 'none', // Remove a borda
           width: '100%',
           maxWidth: '600px', // Limita a largura para centralizar
-          height: '700px', // Define a altura
+          height: 700, // Define a altura como número
         }}
+        marginHeight={0} // Corrigido para tipo number
+        marginWidth={0} // Corrigido para tipo number
         title="Formulário Tally"
       ></iframe>
     </div>
