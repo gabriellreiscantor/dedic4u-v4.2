@@ -5,11 +5,12 @@ const FormPage: React.FC = () => {
     <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
       <iframe
         src="https://tally.so/embed/mVo5o6?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-        width="100%"
-        height={1000} // Valor numérico
-        frameBorder={0} // Valor numérico
-        marginHeight={0} // Valor numérico
-        marginWidth={0} // Valor numérico
+        style={{
+          width: "100%",
+          height: "1000px", // Ajuste de altura como string válida
+          border: "none", // Remoção de frameBorder como atributo
+          margin: "0", // Substituição de marginHeight e marginWidth
+        }}
         title="Formulário"
       />
     </div>
