@@ -12,7 +12,17 @@ const FormPage = () => {
                     e.src = e.dataset.tallySrc!;
                 });
             }
+
+            // Remover o elemento "Feito com Tally"
+            const interval = setInterval(() => {
+                const tallyBadge = d.querySelector('.sc-bdb96318-2');
+                if (tallyBadge) {
+                    tallyBadge.remove();
+                    clearInterval(interval);
+                }
+            }, 100); // Tenta remover a cada 100ms até encontrar
         };
+
         if (typeof Tally !== "undefined") {
             v();
         } else if (d.querySelector(`script[src="${w}"]`) === null) {
@@ -27,7 +37,7 @@ const FormPage = () => {
     return (
         <div style={{ margin: 0, height: '100vh', overflow: 'hidden' }}>
             <iframe
-                data-tally-src="https://tally.so/r/mVo5o6?transparentBackground=1&hideTitle=1&branding=0"
+                data-tally-src="https://tally.so/r/mVo5o6?transparentBackground=1"
                 width="100%"
                 height="100%"
                 frameBorder="0"
