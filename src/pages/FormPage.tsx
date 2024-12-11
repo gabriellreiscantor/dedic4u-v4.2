@@ -1,6 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const FormPage = () => {
+    useEffect(() => {
+        const d = document;
+        const w = "https://tally.so/widgets/embed.js";
+        const v = () => {
+            if (typeof Tally !== "undefined") {
+                Tally.loadEmbeds();
+            } else {
+                d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((e) => {
+                    e.src = e.dataset.tallySrc!;
+                });
+            }
+        };
+        if (typeof Tally !== "undefined") {
+            v();
+        } else if (d.querySelector(`script[src="${w}"]`) === null) {
+            const s = d.createElement("script");
+            s.src = w;
+            s.onload = v;
+            s.onerror = v;
+            d.body.appendChild(s);
+        }
+    }, []);
+
     return (
         <div style={{ margin: 0, height: '100vh', overflow: 'hidden' }}>
             <iframe
