@@ -27,7 +27,7 @@ const FormPage = () => {
     return (
         <div style={{ margin: 0, height: '100vh', overflow: 'hidden' }}>
             <iframe
-                data-tally-src="https://tally.so/r/mVo5o6?transparentBackground=1"
+                data-tally-src="https://tally.so/r/mVo5o6?transparentBackground=1&hideTitle=1&branding=0"
                 width="100%"
                 height="100%"
                 frameBorder="0"
