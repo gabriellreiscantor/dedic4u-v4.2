@@ -19,7 +19,7 @@ const FormPage: React.FC = () => {
       <div className="bg-gray-800 p-6 rounded-lg shadow-lg max-w-3xl w-full">
         {/* Título */}
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-6 text-pink-500">
-          Por Favor, Confirme Seus Dados
+          POR FAVOR, CONFIRME SEUS DADOS NOVAMENTE POR SEGURANÇA.
         </h1>
         {/* Formulário */}
         <iframe
