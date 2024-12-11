@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from 'react';
 
 const FormPage: React.FC = () => {
   useEffect(() => {
@@ -25,6 +25,8 @@ const FormPage: React.FC = () => {
         width="100%"
         height="100%"
         frameBorder="0"
+        marginHeight={0}
+        marginWidth={0}
         title="Formulário de Confirmação"
       ></iframe>
     </div>
