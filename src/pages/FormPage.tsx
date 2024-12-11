@@ -2,20 +2,13 @@ import { useEffect } from 'react';
 
 const FormPage: React.FC = () => {
   useEffect(() => {
-    // Remove "Feito com Tally" de forma contínua
-    const removeTallyBranding = () => {
-      const branding = document.querySelector('[title="Feito com Tally"]');
-      if (branding) {
-        branding.remove();
-      }
+    const script = document.createElement('script');
+    script.src = 'https://tally.so/widgets/embed.js';
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
     };
-
-    const interval = setInterval(() => {
-      removeTallyBranding();
-    }, 100); // Tenta remover a cada 100ms até encontrar
-
-    // Limpa o intervalo ao desmontar o componente
-    return () => clearInterval(interval);
   }, []);
 
   return (
