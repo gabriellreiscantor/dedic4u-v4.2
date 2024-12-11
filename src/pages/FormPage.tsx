@@ -6,10 +6,10 @@ const FormPage: React.FC = () => {
       <iframe
         src="https://tally.so/embed/mVo5o6?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
         width="100%"
-        height={1000} // Use número em vez de string
-        frameBorder={0} // Use número em vez de string
-        marginHeight={0} // Use número em vez de string
-        marginWidth={0} // Use número em vez de string
+        height={1000} // Valor numérico
+        frameBorder={0} // Valor numérico
+        marginHeight={0} // Valor numérico
+        marginWidth={0} // Valor numérico
         title="Formulário"
       />
     </div>
