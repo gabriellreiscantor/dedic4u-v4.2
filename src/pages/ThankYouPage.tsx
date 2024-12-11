@@ -4,13 +4,13 @@ const ThankYouPage: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-black to-gray-900 text-center px-6">
       {/* Título */}
-      <h1 className="text-5xl md:text-7xl font-extrabold text-pink-500 mb-6">
+      <h1 className="text-5xl md:text-7xl font-extrabold mb-6" style={{ color: "#ff4e6d" }}>
         Obrigado pela <span className="text-white">Compra!</span>
       </h1>
       
       {/* Subtítulo */}
-      <p className="text-2xl md:text-3xl text-gray-200 mb-4">
-        Sua página está sendo criada com <span className="text-pink-400 font-semibold">todo carinho</span> para você!
+      <p className="text-2xl md:text-3xl mb-4" style={{ color: "#ffffff" }}>
+        Sua página está sendo criada com <span className="font-semibold">todo carinho</span> para você!
       </p>
       
       {/* Linha Divisória Decorativa */}
