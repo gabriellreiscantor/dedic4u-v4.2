@@ -1,11 +1,12 @@
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { PlanCard } from '../components/PlanCard';
-import { Steps } from '../components/home/Steps'; // Novo componente
-import { Features } from '../components/home/Features'; // Novo componente
-import { Testimonials } from '../components/home/Testimonials'; // Novo componente
-import { FAQ } from '../components/home/FAQ'; // Novo componente
+import { Steps } from '../components/home/Steps';
+import { Features } from '../components/home/Features';
+import { Testimonials } from '../components/home/Testimonials';
+import { FAQ } from '../components/home/FAQ';
 import { CoupleForm } from '../components/CoupleForm';
 import { PhoneMockup } from '../components/PhoneMockup';
 import { plans } from '../data/plans';
