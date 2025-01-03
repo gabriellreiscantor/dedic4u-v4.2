@@ -17,7 +17,7 @@ export const Header: React.FC = () => {
             transition={{ duration: 2, repeat: Infinity }}
             className="text-pink-500 text-sm font-semibold"
           >
-            ❤️ Declare seu amor de uma forma única e especial! ❤️
+            🔥 50 MIL VISITAS: 50% OFF HOJE! 🔥
           </motion.p>
         </div>
         
