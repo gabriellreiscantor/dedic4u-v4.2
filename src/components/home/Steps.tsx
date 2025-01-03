@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { FileText, CreditCard, QrCode, Heart } from 'lucide-react';
 
